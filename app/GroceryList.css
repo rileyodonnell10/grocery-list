@@ -1,0 +1,140 @@
+html, body, #app {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+#app {
+    background: #fbf7ed;
+    font-family: Helvetica;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+.groceryList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 100px auto 0px auto;
+}
+
+@media (max-width: 600px) {
+    .groceryList {
+        margin-top: 50px;
+    }
+}
+
+h1 {
+    color: #004c3f;
+    font-family: Georgia;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+form {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+input {
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid #004c3f;
+    flex: 1;
+    padding: 0 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.submitButton {
+    width: 100px;
+    height: 100%;
+    margin-left: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #004c3f;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submitButton:hover {
+    background: rgba(0, 76, 63, 0.8);
+}
+
+.list {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #004c3f;
+    position: relative;
+    overflow: hidden;
+}
+
+.listButton {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    border: 1px solid #f2f2f2;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+}
+
+.purchaseButton {
+    margin-right: 15px;
+}
+
+.itemName {
+    font-size: 1rem;
+}
+
+.editInput {
+    border: none;
+    padding: 0;
+}
+
+.editButton {
+    margin-left: auto;
+}
+
+.deleteButton {
+    margin-left: 15px;
+}
+
